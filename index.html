@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guillermo Alvarado's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Guillermo Alvarado, Front-End Developer + Coding Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <main>
       <!--*************** ABOUT / PROFILE ***************-->
       <header>
-        <div class="content-wrap">
+        <div class="content-wrap divider">
           <h1>Guillermo Alvarado</h1>
           <p>Frontend Developer + Coding Enthusiast</p>
           <p>
@@ -34,8 +40,8 @@
         </div>
       </header>
       <!--*************** PROJECTS / PORTFOLIO ***************-->
-      <section>
-        <div class="content-wrap">
+      <section class="projects">
+        <div class="content-wrap divider">
           <h2>Featured Projects</h2>
           <p>
             View selected projects below. More infromation can be found in
@@ -43,7 +49,7 @@
             page.
           </p>
           <!-- Project 1 -->
-          <section>
+          <section class="project-item">
             <img
               src="/images/Tribute.png"
               alt="Dr. Norman Borlaug and a group of biologists in a Mexican field"
@@ -51,32 +57,47 @@
             <h3>"Tribute Pate" -The Project Odin</h3>
             <p>
               Tribute page created following the instructions from a "The
-              Project Oditn" career path.
+              Project Oditn" career path. This project uses only html and a bit
+              of css. As this was one of the first few projects I created in my
+              early stages of web development, I hold this project very dear.
             </p>
-            <a href="https://codepen.io/Kaezen51/pen/MWXzywj" target="_blank"
+            <a
+              class="btn"
+              href="https://codepen.io/Kaezen51/pen/MWXzywj"
+              target="_blank"
               >Tribute Page</a
             >
           </section>
           <!-- Project 2 -->
-          <section>
+          <section class="project-item">
             <img
               src="/images/Login-button.png"
               alt="Login button on a dark background"
             />
             <h3>Login Button</h3>
-            <a href="https://codepen.io/Kaezen51/pen/KKBvMwK" target="_blank"
+            <p>
+              This is a project I found while browsing the CodePen website. This
+              project is just a fork from another developer. I used this project
+              to practice css and understand the way animation works in CSS.
+            </p>
+            <a
+              class="btn"
+              href="https://codepen.io/Kaezen51/pen/KKBvMwK"
+              target="_blank"
               >Login Button</a
             >
           </section>
           <!-- Project 3 -->
-          <section>
+          <section class="project-item">
             <img src="/images/The-box-model.png" alt="Image of the box model" />
             <h3>Exercise on how the Box Model can be reset</h3>
             <p>
               This exercise shocases how the box model can be reset using some
-              CSS values.
+              CSS values. The point of this project was to play with the way the
+              Border Box property works and how this affects the way padding and
+              margin interact with the Box Model.
             </p>
-            <a href="https://codepen.io/Kaezen51/pen/RwJmpBw"
+            <a class="btn" href="https://codepen.io/Kaezen51/pen/RwJmpBw"
               >The box model exercise</a
             >
           </section>
@@ -84,66 +105,80 @@
       </section>
       <!--*************** WORK EXPERIENCE ***************-->
 
-      <section>
-        <div class="content-wrap">
+      <section class="work-experience item-details">
+        <div class="content-wrap divider">
           <h2>Work Experience</h2>
           <p>
             See my complete work history on
             <a href="https://github.com/Kaezen51">GitHub</a>
           </p>
           <!-- Job 1 -->
-          <section>
-            <h3>Frontend Developer & Enthusiast</h3>
-            <p>Freelance</p>
-            <p>January 2020-Present</p>
-            <p>
-              Front-end related services ranging from development work, speaking
-              engagements, instructor training, workshops, and curriculum
-              development.See more at
-              <a href="https://github.com/Kaezen51">GitHub.com</a>
-            </p>
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Frontend Developer & Enthusiast</h3>
+              <p>Freelance</p>
+              <p>January 2020-Present</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                Front-end related services ranging from development work,
+                speaking engagements, instructor training, workshops, and
+                curriculum development.See more at
+                <a href="https://github.com/Kaezen51">GitHub.com</a>
+              </p>
+            </div>
           </section>
           <!-- Job 2 -->
-          <section>
-            <h3>Director of the Art Department</h3>
-            <p>BlueWater Apparel</p>
-            <p>March 2018- October 2020</p>
-            <p>Key responsabilities and contributions:</p>
-            <ul>
-              <li>Be in charge of the pre-printing processes</li>
-              <li>Prepare and print out the separations for screenprinting</li>
-              <li>Quality control over the pre and post printing designs</li>
-            </ul>
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Director of the Art Department</h3>
+              <p>BlueWater Apparel</p>
+              <p>March 2018- October 2020</p>
+            </div>
+            <div class="job-summary">
+              <p>Key responsabilities and contributions:</p>
+              <ul>
+                <li>Be in charge of the pre-printing processes</li>
+                <li>
+                  Prepare and print out the separations for screenprinting
+                </li>
+                <li>Quality control over the pre and post printing designs</li>
+              </ul>
+            </div>
           </section>
           <!-- Job 3  -->
-          <section>
-            <h3>Supervisor of Post-Printing process</h3>
-            <p>Ink Throwers</p>
-            <p>
-              Supervision of the quality of post-printed t-shirts and street
-              signs.
-            </p>
-            <p>Main responsabilities:</p>
-            <ul>
-              <li>
-                Ensure printing and item quality in a post-printing process
-              </li>
-              <li>
-                Supervise the correct use of paints/painting habits to assure
-                the client we deliver the best quality of printing
-              </li>
-              <li>
-                Deliver results in a timely manner as well as ensure the best
-                practices for the printing processes in the line.
-              </li>
-            </ul>
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Supervisor of Post-Printing process</h3>
+              <p>Ink Throwers</p>
+              <p>
+                Supervision of the quality of post-printed t-shirts and street
+                signs.
+              </p>
+            </div>
+            <div class="job-summary">
+              <p>Main responsabilities:</p>
+              <ul>
+                <li>
+                  Ensure printing and item quality in a post-printing process
+                </li>
+                <li>
+                  Supervise the correct use of paints/painting habits to assure
+                  the client we deliver the best quality of printing
+                </li>
+                <li>
+                  Deliver results in a timely manner as well as ensure the best
+                  practices for the printing processes in the line.
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
       </section>
       <!--*************** EDUCATION & CERTIFICATIONS ***************-->
 
-      <section>
-        <div class="content-wrap">
+      <section class="education item-details">
+        <div class="content-wrap low_opacity-background">
           <h2>Education</h2>
           <section>
             <h3>LinkedIn Learning</h3>
@@ -176,9 +211,9 @@
 
       <footer>
         <div class="content-wrap">
-          <p>How do you take your cofee?</p>
+          <h2>How do you take your coffee?</h2>
           <!-- Social media and contact links -->
-          <ul>
+          <ul class="contact-list">
             <li>
               <a href="mailto:g.galvarado55@outlook.com"
                 >g.galvarado55@outlook.com</a
