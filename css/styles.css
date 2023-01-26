@@ -131,7 +131,7 @@ header {
 }
 
 .low_opacity-background {
-  background: rgb(241, 250, 238, 55%);
+  background: rgb(241, 250, 238, 65%);
   padding: 0 20px;
   border-radius: 10px;
 }
