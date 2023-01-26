@@ -99,14 +99,6 @@ header {
   background: #f1faee;
 }
 
-.projects a {
-  color: #1d3557;
-}
-
-.projects a:visited {
-  color: #1d3557;
-}
-
 .projects .btn {
   background-color: #1d3557;
   color: #f7fff7;
