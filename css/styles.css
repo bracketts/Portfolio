@@ -40,6 +40,9 @@ a:hover {
   text-decoration: none;
 }
 
+a:visited {
+  color: #e9c46a;
+}
 h1,
 h2 {
   font-family: "Caveat", cursive;
@@ -97,6 +100,10 @@ header {
 }
 
 .projects a {
+  color: #1d3557;
+}
+
+.projects a:visited {
   color: #1d3557;
 }
 
